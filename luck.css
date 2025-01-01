@@ -227,11 +227,11 @@ p {font-size: 0.7em;
 }
 @keyframes endin{
     0%{
-        transform: scale(0.8);
+        /* transform: scale(0.8); */
         opacity: 0;
     }
     100%{
-        transform: scale(1);
+        /* transform: scale(1); */
         opacity:100;
     }
 }
@@ -241,7 +241,7 @@ p {font-size: 0.7em;
         font-size: 30%;
         /* top: 40%; */
     }
-    
+
 
     
 }
