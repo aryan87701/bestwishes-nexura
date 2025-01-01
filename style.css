@@ -624,3 +624,13 @@ body{
   }
 }
 
+@media(max-width:426px){
+#statusque{
+  font-size: 1.3em;
+}
+.radio-input .label .text {
+  color: #fff;
+  font-size: 1em;
+}
+  
+}

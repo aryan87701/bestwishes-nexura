@@ -239,8 +239,9 @@ p {font-size: 0.7em;
 @media(max-width:426px){
     .section2c p{
         font-size: 30%;
-        top: 40%;
+        /* top: 40%; */
     }
+    
 
     
 }
