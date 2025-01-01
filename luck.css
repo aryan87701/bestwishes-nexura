@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color:black ;
+    animation: change 3s 1 ;
+    animation-delay: 3s;
+}
+.newbody{
+    background-color:rgba(0, 0, 0, 0) ;
+    animation: out 3s 1 ;
+    /* animation-delay: 3s; */
+}
+@keyframes out{
+    0%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    
+    text-align: center;
+    font-family: "Karla", serif;
+
+}
+.section1{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    font-family: "Karla", serif;
+}
+.section1c  {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position: fixed;
+    text-align: center;
+    font-family: "Karla", serif;
+    top: 0;
+}
+.section2{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    font-family: "Karla", serif;
+    top: 0;
+}
+.section2c{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    text-align: center;
+    font-family: "Karla", serif;
+    top: 0;
+    font-size: 2em;
+    animation: endin 2s 1;
+}
+
+
+.myVideo{
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+   height: 100vh;
+   width: 100%;
+  display: none;
+  }
+ 
+
+.cumin{
+    object-fit: cover;
+    display: flex;
+   
+}
+
+
+.section h1{
+    font-size: 1em;
+    color: black;
+    margin: 20px;
+    animation: in 5s 1;
+  
+}
+@keyframes inin{
+    0%{
+        opacity: 0;
+       
+    }   
+    50%{
+        opacity: 100;
+    
+    }
+    100%{
+        opacity: 0;
+    
+    }
+}
+@keyframes out{
+    0%{
+        opacity: 100;
+       
+    }   
+    100%{
+        opacity: 0;
+    
+    }
+}
+.section1c h1{
+    font-size: 2em;
+    color: #ffffff99;
+    margin: 20px;
+    animation: inin 6s 1;
+    z-index: 2;
+}
+
+
+.carousel-image.visible {
+    opacity: 1;
+}
+
+@keyframes in{
+    0%{display: flex;
+     opacity: 0;
+     transform: scale(0.9);
+     /* color: white; */
+    }
+    50%{
+        opacity: 100;
+        transform: scale(1);
+        color: white;
+    }
+    100%{
+        opacity: 100;
+        transform: scale(1);
+        color: black;
+    
+    }
+}
+@keyframes change{
+    0%{
+        background-color: black;
+
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+/* body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 } */
+
+p {font-size: 0.7em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, .25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: fixed;
+    top: 29%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+@keyframes endin{
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity:100;
+    }
+}
+
+@media(max-width:426px){
+    .section2c p{
+        font-size: 30%;
+        top: 40%;
+    }
+
+    
+}
