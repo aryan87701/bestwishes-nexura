@@ -27,6 +27,7 @@ body{
     }
 }
 #statusque{
+  text-decoration: underline;
     font-size: 2em;
     color: white;
 }
